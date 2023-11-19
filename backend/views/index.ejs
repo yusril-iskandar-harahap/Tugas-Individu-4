@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Individu 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body/>
+    <h1>Data Buku</h1>
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">No</th>
+                <th scope="col">Judul</th>
+                <th scope="col">Author</th>
+                <th scope="col">Terbit</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <% for (let data_buku of users) { %>
+                <th scope="row"><%= data_buku.No %></th>
+                <th scope="row"><%= data_buku.Judul %></th>
+                <th scope="row"><%= data_buku.Author %></th>
+                <th scope="row"><%= data_buku.Terbit %></th>
+            </tr>
+            <% } %>
+            </tbody>
+        </table>
+        <form action="/tambah" method="post">
+            <h3>Tambah Buku</h3>
+            <div class="mb-3">
+            <label for="judul" class="form-label">Judul</label>
+            <input type="text" name="judul" class="form-control">
+            </div>
+            <div class="mb-3">
+            <label for="author" class="form-label">Author</label>
+            <input type="text" name="author" class="form-control">
+            </div>
+            <div class="mb-3">
+            <label for="terbit" class="form-label">Terbit</label>
+            <input type="text" name="terbit" class="form-control">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

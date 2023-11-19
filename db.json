@@ -1,0 +1,17 @@
+{
+  "user": [
+    {},
+    {
+      "id": "yusril",
+      "name": "Yusril Iskandar Harahap",
+      "password": "harahap",
+      "email": "yusril@123.com"
+    },
+    {
+      "id": "iskandar",
+      "name": "Yusril Iskandar Harahap",
+      "password": "112233",
+      "email": "yusril@2000.com"
+    }
+  ]
+}
